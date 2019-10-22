@@ -796,7 +796,6 @@ const sampleData = [
         }
     }
     tagList.addEventListener("click", function (e) {
-        debugger
         const item = e.target;
        if (item.classList.contains("close")) {
            const name = item.attributes[0].nodeValue;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <style>
+        .searchContainer {
+            width: 600px;
+            margin: 50px auto;
+        }
+        .inputField {
+            padding: 10px;
+            box-sizing: border-box;
+            border: 0;
+            flex-grow: 1;
+        }
+        .inputField:focus {
+            outline: none;
+        }
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            box-shadow: 1px 7px 3px #bfbfbf;
+            background-color: #ffffff;
+            max-height: 300px;
+            overflow: scroll;
+        }
+        .list li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .searchArea {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e6e2e2;
+        }
+        #tagList {
+            max-width: 200px;
+        }
+        .tag {
+            color: #ffffff;
+            background-color: #898989;
+            display: inline-block;
+            padding: 5px;
+            font-size: 11px;
+        }
+        .tagText {
+            display: inline-block;
+            width: 70px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .close {
+            cursor: pointer;
+            padding-left: 5px;
+            vertical-align: top;
+        }
+    </style>
+    <div id="customSearch" class="searchContainer">
+        <div class="searchArea" id="searchArea">
+            <div id="tagList"></div>
+            <input type="text" placeholder="search...." id="search" class="inputField" value=""/>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
